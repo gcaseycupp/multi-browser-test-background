@@ -1,0 +1,31 @@
+{
+    "name": "Multi-Browser Test Extension Script-ServiceWorker",
+    "description": "Multi-Browser Test Extension Script-ServiceWorker",
+    "version": "1.0",
+    "permissions": [
+        "webRequest",
+        "webNavigation",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+      ],
+    "background": {
+        "scripts": ["serviceworker.js"]
+    },
+    "action": {
+        "default_name": "Multi-Browser Test Extension Script-ServiceWorker",
+        "default_title": "Multi-Browser Test Extension Script-ServiceWorker",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+        {
+        "resources": ["image.png", "style.css"],
+        "matches": ["https://*/*", "http://*/*" ]
+        }
+    ],
+   
+    "manifest_version": 3
+}
